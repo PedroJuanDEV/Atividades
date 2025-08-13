@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="../css/style/style.css" />
+    <link rel="stylesheet" href="../css/style/carousel.css">
+    <link rel="stylesheet" href="../css/style/Formulario.css">
+    <link rel="stylesheet" href="../css/style/navbar.css">
+    <link rel="stylesheet" href="../css/style/cards.css">
+    <link rel="stylesheet" href="../css/style/modal.css"> 
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="section inicio">
+        <img src="../img/perfil.png.jpg" alt="Foto de Perfil" class="foto-perfil" />
+        <h1>Pedro Juan</h1>
+        <p class="descricao">Desenvolvedor Front-End</p>
+    </section>
+
+    <section class="sobre-me">
+        <div class="cards-container">
+            <div class="card" 
+                 data-title="Tecnologias" 
+                 data-image="https://via.placeholder.com/400" 
+                 data-description="Explore as tecnologias que domino, como HTML, CSS, JavaScript, e frameworks modernos para desenvolvimento web." 
+                 data-link="#"> <div class="card-image" style="background-image: url('../img/Tec.jpg');"></div>
+                <div class="card-text">Tecnologias</div>
+            </div>
+
+            <div class="card" 
+                 data-title="Sobre Mim" 
+                 data-image="https://via.placeholder.com/400" 
+                 data-description="Saiba mais sobre minha paixão por tecnologia, minha jornada como desenvolvedor e meus objetivos profissionais." 
+                 data-link="#">
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
+                <div class="card-text">Sobre-me</div>
+            </div>
+
+            <div class="card" 
+                 data-title="Formação Acadêmica" 
+                 data-image="https://via.placeholder.com/400" 
+                 data-description="Minha trajetória acadêmica inclui um período de um ano cursado em Engenharia de Materiais na Universidade Federal Rural de Pernambuco (UFRPE).
+                  Atualmente, estou matriculado em Estatística na Universidade Federal de Pernambuco (UFPE)
+                  , concomitantemente, curso Análise e Desenvolvimento de Sistemas (ADS) na Universidade Senac, e fiz um profissionalizante em montagem e manutenção de micro no ano de 2018.
+                   " 
+                 data-link="#">
+                <div class="card-image" style="background-image: url('../img/Graduación.jpg');"></div>
+                <div class="card-text">Graduações</div>
+            </div>
+
+            <div class="card" 
+                 data-title="Ideias" 
+                 data-image="https://via.placeholder.com/400" 
+                 data-description="Participei de duas residências tecnológicas no Porto Digital, sendo elas o programa Kick-Off em 2024 e o RiseUp em 2025." 
+                 data-link="#">
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
+                <div class="card-text">Experiencias</div>
+            </div>
+            
+        
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <h2>Projetos</h2>
+        
+        <div class="carousel">
+            <div class="carousel-track" id="track">
+                <div class="slide slide1">
+                    <h3>InovaPed</h3>
+                    <img src="../img/InovaPed.png" alt="InovaPed" />
+                    <p>Aplicativo que visa auxiliar o contato entre professores e responsaveis.</p>
+                    <a href="https://github.com/seuusuario/contabileve" target="_blank">Ver no GitHub</a>
+                </div>
+                
+                <div class="slide slide2">
+                    <h3>ContabiLeve</h3>
+                    <img src="contabileve.png" alt="ContabiLeve" />
+                    <p>Aplicativo para facilitar o envio de documentos entre contador e cliente.</p>
+                    <a href="https://github.com/seuusuario/contabileve" target="_blank">Ver no GitHub</a>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="prevBtn">⟨</button>
+                <button id="nextBtn">⟩</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <form id="contato-form">
+            <div class="form-group">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required />
+            </div>
+
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome *</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Insira seu sobrenome" required />
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required />
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Informe o que deseja." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="lingua">Língua</label>
+                <select id="lingua" name="lingua">
+                    <option value="pt-br" selected>Português (pt-br)</option>
+                    <option value="en-us">Inglês (en-us)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="prototipo">Protótipo (Requisitos)</label>
+                <input type="file" id="prototipo" name="prototipo" />
+            </div>
+
+            <div class="form-group">
+                <label>As linguagens que você prefere? (Para fazer várias escolhas, mantenha a tecla CTRL pressionada)</label>
+                <select id="linguagens" name="linguagens" multiple class="select-multiple">
+                    <option value="java">Java</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Banco de Dados</label>
+                <div class="radio-group">
+                    <input type="radio" id="mysql" name="banco_dados" value="mysql" checked />
+                    <label for="mysql">MySQL</label>
+                    <input type="radio" id="postgresql" name="banco_dados" value="postgresql" />
+                    <label for="postgresql">PostgreSQL</label>
+                    <input type="radio" id="mongodb" name="banco_dados" value="mongodb" />
+                    <label for="mongodb">MongoDB</label>
+                    <input type="radio" id="n_a_db" name="banco_dados" value="n_a" />
+                    <label for="n_a_db">N/A</label>
+                    <input type="radio" id="outro_db" name="banco_dados" value="outro" />
+                    <label for="outro_db">Outra</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Turno para Reuniões *</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="manha" name="turno_reuniao" value="manha" required />
+                    <label for="manha">Manhã</label>
+                    <input type="checkbox" id="tarde" name="turno_reuniao" value="tarde" />
+                    <label for="tarde">Tarde</label>
+                    <input type="checkbox" id="noite" name="turno_reuniao" value="noite" />
+                    <label for="noite">Noite</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="horario_sugerido">Horário Sugerido</label>
+                <input type="time" id="horario_sugerido" name="horario_sugerido" />
+            </div>
+
+            <div class="form-group">
+                <label for="data_prevista">Data Prevista Entrega</label>
+                <input type="date" id="data_prevista" name="data_prevista" placeholder="dd/mm/aaaa" />
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+
+        <div id="mensagem-sucesso" style="display: none;">Mensagem enviada com sucesso!</div>
+    </section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <img id="modalImage" src="" alt="" />
+            <p id="modalDescription"></p>
+            <a id="modalLink" href="" target="_blank">Ver mais</a>
+        </div>
+    </div>
+
+    <script src="../javascript/bottom.js"></script>
+    <script src="../javascript/modal-handler.js"></script> 
+</body>
+</html>

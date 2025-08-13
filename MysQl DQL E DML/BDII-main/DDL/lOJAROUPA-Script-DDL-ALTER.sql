@@ -1,0 +1,26 @@
+-- DDL_ALTERACOES.sql
+
+ALTER TABLE `cliente` ADD COLUMN `data_nascimento` DATE NULL;
+
+ALTER TABLE `cliente` MODIFY COLUMN `email` VARCHAR(50);
+
+ALTER TABLE `produto` ADD COLUMN `quantidade` VARCHAR(50) NULL;
+
+ALTER TABLE `estoque` MODIFY COLUMN `quantidade` INT NOT NULL DEFAULT 0;
+
+ALTER TABLE `fornecedor` ADD COLUMN `site` VARCHAR(100) NULL;
+
+ALTER TABLE `funcionario` ADD COLUMN `data_admissao` DATE NULL;
+
+ALTER TABLE `venda` ADD COLUMN `devolução` DECIMAL(5,2) NULL DEFAULT 0;
+
+ALTER TABLE `produto` MODIFY COLUMN `preco` DECIMAL(10,2) NOT NULL;
+
+ALTER TABLE `cliente` ADD COLUMN `cpf` VARCHAR(20) NULL;
+
+ALTER TABLE fornecedor ADD COLUMN status VARCHAR(20);
+
+ALTER TABLE venda ADD COLUMN status VARCHAR(20);
+
+ALTER TABLE venda_produto CHANGE COLUMN venda_id_venda id_venda DATE NULL;
+

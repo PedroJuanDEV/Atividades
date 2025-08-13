@@ -1,0 +1,90 @@
+#contato {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+#contato h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#contato-form label {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#contato-form input,
+#contato-form select,
+#contato-form textarea {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+  resize: vertical;
+}
+
+#contato-form input:focus,
+#contato-form select:focus,
+#contato-form textarea:focus {
+  background: rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+#contato-form button {
+  padding: 1rem;
+  border-radius: 14px;
+  background-color: #4caf50;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+#contato-form button:hover {
+  background-color: #43a047;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  #contato {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  #contato h2 {
+    font-size: 1.5rem;
+  }
+  
+  #contato-form input,
+  #contato-form select,
+  #contato-form textarea {
+    font-size: 1rem;
+  }
+
+  #contato-form button {
+    font-size: 1rem;
+    padding: 0.85rem;
+  }
+}

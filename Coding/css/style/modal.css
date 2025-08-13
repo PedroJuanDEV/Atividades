@@ -1,0 +1,37 @@
+/* --- Estilos do Modal --- */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
+    
+    /
+}
+
+
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.1); 
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 600px; 
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+    color: #fff;
+
+    /* Animação de entrada */
+    animation: fadeInScale 0.3s ease-out forwards;
+}
+

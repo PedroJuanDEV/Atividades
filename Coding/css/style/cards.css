@@ -1,0 +1,62 @@
+
+
+.sobre-me {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 2rem; /* espaço entre cards */
+  flex-wrap: wrap;
+  max-width: 70rem; /* controla largura total */
+}
+
+
+
+.card {
+  background: rgba(255, 255, 255, 0.1); /* fundo semi-transparente */
+  border-radius: 1rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+  /* efeito vidro */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* borda leve */
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* área da imagem */
+.card-image {
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  
+  /* linha divisória abaixo da imagem */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* parte do texto, mantém transparente com vidro */
+.card-text {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  flex-shrink: 0;
+}
+
+
+
